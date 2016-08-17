@@ -1,4 +1,7 @@
 buildscript {
+    ext {
+        springCloudConnectorsVersion = '1.2.2.RELEASE'
+    }    
     repositories {
         mavenCentral()
     }
@@ -26,6 +29,10 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile "org.springframework.cloud:spring-cloud-core:${springCloudConnectorsVersion}"
+    compile "org.springframework.cloud:spring-cloud-spring-service-connector:${springCloudConnectorsVersion}"
+    compile "org.springframework.cloud:spring-cloud-cloudfoundry-connector:${springCloudConnectorsVersion}"
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
