@@ -1,1 +1,5 @@
 wx.properties
+.build
+build/
+.gradle
+manifest.yml
