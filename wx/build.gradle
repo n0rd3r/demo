@@ -26,6 +26,8 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
+    compile("redis.clients:jedis:2.8.1")
+    compile group: 'com.cedarsoftware', name: 'json-io', version: '2.2.29'
     compile("org.springframework.boot:spring-boot-starter-web")
     compile "org.springframework.cloud:spring-cloud-core:${springCloudConnectorsVersion}"
     compile "org.springframework.cloud:spring-cloud-spring-service-connector:${springCloudConnectorsVersion}"
